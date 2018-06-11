@@ -1,0 +1,34 @@
+{
+    "name": "koolm/laravel-bittrex",
+    "description": "A simple wrapper to seamlessly communicate with the Bittrex API",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "laravel/framework": ">=5.5"
+    },
+    "keywords": [
+        "laravel", "bittrex", "api", "php", "crypto", "exchange"
+    ],
+    "authors": [
+        {
+            "name": "Jason Koolman",
+            "email": "jason.koolman@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Koolm\\Bittrex\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Koolm\\Bittrex\\BittrexServiceProvider"
+            ],
+            "aliases": {
+                "Bittrex": "Koolm\\Bittrex\\Facades\\Bittrex"
+            }
+        }
+    }
+}
