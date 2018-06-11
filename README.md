@@ -2,7 +2,7 @@
 
 Communicate with the Bittrex API.
 
-## Configuation
+## Configuration
 Publish the default configuration:
 
     php artisan vendor:publish --provider="Koolm\Bittrex\BittrexServiceProvider"
